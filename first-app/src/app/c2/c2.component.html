@@ -1,0 +1,17 @@
+<h2>app component</h2>
+<div>
+    <button>button2</button>
+</div>
+<div>
+    <form [formGroup]="formData" (ngSubmit)="onClickSubmit()">
+        Name:<input type="text" name="userName" placeholder="enter username" formControlName="userName">
+        <br>
+        <span style="color:red;" *ngIf="username && username.invalid && username.touched">this field is required</span>
+        <br>
+        password:<input type="password" name="password" formControlName="password">
+        <br>
+        <span style="color:red;" *ngIf="password && password.invalid && password.touched">this field is required</span>
+       <br>
+       <button [disabled]="formData.invalid">submit</button>
+    </form>
+</div>

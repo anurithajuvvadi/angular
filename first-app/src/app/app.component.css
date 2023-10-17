@@ -1,0 +1,10 @@
+/*button{
+    background-color: aliceblue;
+}*/
+.container{
+    padding: 20px 30px;
+    background-color: aquamarine;
+}
+.more-products{
+    display: flex;
+}

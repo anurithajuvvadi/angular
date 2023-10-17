@@ -1,0 +1,12 @@
+<form #form1="ngForm" (ngSubmit)="onClickSubmit(form1.value)">
+    userName:<input type="text" name="username" placeholder="username" ngModel>
+    <br>
+    password:<input type="password" name="password" placeholder="password" ngModel>
+    <br>
+    Gender:
+    Male<input type="radio" id="gender1" name="gender" ngModel>
+    Female:<input type="radio" id="gender2" name="gender" ngModel>
+    <br>
+    <input type="submit" value="submit">
+
+</form>

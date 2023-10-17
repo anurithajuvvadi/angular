@@ -1,0 +1,90 @@
+<input type="text" #box/>
+<button (click)="getval(box.value)">get value</button>
+<h2>{{cval}}</h2>
+
+<app-header [item]="current_item"></app-header>
+<app-header myoutput="getdata($event)"></app-header>
+<app-header [sum]="val3"></app-header>
+
+<input type="text" #box1/>
+<input type="text" #box2/>
+<button (click)="add(box1.value,box2.value)">add</button>
+<div>
+    <div class="app-component">
+        <h2>app component</h2>
+        <button>button</button>
+    </div>
+
+    <div>
+        <app-c1></app-c1>
+        <app-c2></app-c2>
+    </div>
+    <h1 *ngIf="show == 'true'">
+        hello
+    </h1>
+    <h3 *ngFor="let item of data">
+        {{item}}
+    </h3>
+    <h2 *ngFor="let item of data1">
+        {{item.name}}
+        {{item.age}}
+        {{item.lastname}}
+
+    </h2>
+    <tr>
+        <td>name</td>
+        <td>age</td>
+        <td>lastname</td>
+    </tr>
+    <tr *ngFor="let item of data1" >
+        <td> {{item.name}}</td> 
+        <td> {{item.age}}</td>
+        <td> {{item.lastname}}
+        </td>
+
+    </tr>
+
+</div>
+<div class="container">
+    <h2>New Smart Phone</h2>
+    
+    <div class="more-products">
+    
+        <app-product>
+            <h4 class="title">New in Samsung</h4>
+            <button class="btn btn-primary">show more</button>
+        </app-product>
+        <app-product>
+            <h4 class="title">New in iphone</h4>
+            <button class="btn btn-primary">show more</button>
+        </app-product>
+        <app-product>
+            <h4 class="title">New in MI</h4>
+            <button class="btn btn-primary">show more</button>
+        </app-product>
+        <app-product>
+            <h4 class="title">New in Motorola</h4>
+            <button class="btn btn-primary">show more</button>
+        </app-product> 
+    </div>
+    </div>
+    <h2 [ngStyle]="{'color':'red','font-weight':'bold'}"> example sentence</h2>
+    <h2 appDir1 >example of directive</h2>
+    <h2>example of hostlistener and hostbinding</h2>
+    <!--<h2>
+        Date:{{dateToday}}<br>
+        Date pipe:{{dateToday|date|uppercase}}
+        Date pipe:{{dateToday|date:'short'|uppercase}}
+        Name:{{name|uppercase}}
+        Name:{{name|slice:6}}
+    </h2>-->
+    <b>{{1234.56|currency:"USD"}}</b>
+
+    pipe example
+    <h2>
+        I am {{birthday|customPipe}} years old
+    </h2>
+
+    <app-httpexample></app-httpexample>
+    
+

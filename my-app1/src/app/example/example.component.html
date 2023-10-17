@@ -1,0 +1,8 @@
+
+<p>{{appname}}</p>
+<img [src]= "image" alt="image">
+<button (click)="getname()">click here</button>
+<app-inputoutputexample [item]="currentitem" (myoutput)="getdata($event)"></app-inputoutputexample>
+
+
+<div *ngIf='mybool'>bolean is set to true</div>

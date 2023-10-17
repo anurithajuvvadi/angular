@@ -1,0 +1,16 @@
+<h1>calling API  in angular using http</h1>
+<table border="1">
+    <tr>
+        <td>main.temp</td>
+        <td>main.temp_min</td>
+        <td>main.temp_max</td> 
+        <td>main.pressure</td>
+    </tr>
+    <tr *ngFor="let item of Data">
+       <td>{{item.main.temp}}</td>
+       <td>{{item.main.temp_min}}</td>
+       <td>{{item.main.temp_max}}</td>
+       <td>{{item.main.pressure}}</td>
+
+    </tr>
+</table>

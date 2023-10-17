@@ -1,0 +1,29 @@
+<div class="form">
+    <h2>REGISTRATION</h2>
+    <form [formGroup]="formData2" (ngSubmit)="onClickSubmit()">
+        firstame:<input type="text" name="firstname" placeholder="enter firstname" formControlName="firstname">
+        <br>
+
+        lastname:<input type="text" name="lastname"  placeholder="enter lastname here" formControlName="lastname">
+        <br>
+        
+
+        password:<input type="password" name="password" formControlName="password">
+        <br>
+        
+
+        D-O-B:<input type="date" name="dob" placeholder="enter date of birth" formControlName="dob">
+       
+
+        email:<input type="email" name="email" formControlName="email">
+        <br>
+        
+        contact:<input type="tel" name="contact" placeholder=" enter contact no" formControlName="contact">
+        <br>
+        
+
+       <button [disabled]="formData2.invalid">submit</button>
+       </form>
+    </div>
+
+

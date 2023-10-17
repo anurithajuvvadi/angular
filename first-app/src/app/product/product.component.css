@@ -1,0 +1,9 @@
+.card{
+    padding: 10px 10px;
+    margin:0 px 10px;
+    background-color: azure;
+    text-align: center;
+}
+.summary{
+    font-size: 12px;
+}

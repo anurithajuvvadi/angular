@@ -1,0 +1,37 @@
+
+<div>
+    <form [formGroup]="formData1" (ngSubmit)="onClickSubmit()">
+        firstame:<input type="text" name="firstname" placeholder="enter firstname" formControlName="firstname">
+        <br>
+        <span style="color:red;" *ngIf="firstname && firstname.invalid && firstname.touched">this field is required</span>
+        <br>
+
+        lastname:<input type="text" name="lastname"  placeholder="enter lastname here" formControlName="lastname">
+        <br>
+        <span style="color:red;" *ngIf="lastname && lastname.invalid && lastname.touched">this field is required</span>
+        <br>
+
+        password:<input type="password" name="password" formControlName="password">
+        <br>
+        <span style="color:red;" *ngIf="password && password.invalid && password.touched">this field is required</span>
+        <br>
+
+        D-O-B:<input type="date" name="dob" placeholder="enter date of birth" formControlName="dob">
+       <!-- <br>
+        <span style="color:red;" *ngIf="dob && dob.invalid && dob.touched">this field is required</span>
+        <br>-->
+
+        email:<input type="email" name="email" formControlName="email">
+        <br>
+        <span style="color:red;" *ngIf="email && email.invalid && email.touched">this field is required</span>
+        <br>
+
+        contact:<input type="tel" name="contact" placeholder=" enter contact no" formControlName="contact">
+        <br>
+        <span style="color:red;" *ngIf="contact && contact.invalid && contact.touched">this field is required</span>
+        <br>
+
+       <button [disabled]="formData1.invalid">submit</button>
+    </form>
+</div>
+

@@ -1,0 +1,29 @@
+<p>header works!</p>
+<app-header></app-header>
+<h2>{{item}}</h2>
+<h2>{{sum}}</h2>
+
+<button (click)="senddata()">senddata</button>"
+<input type="text" #box4>
+<button (click)="f1(box4.value)">click me</button>
+
+<form #form1="ngForm" (ngSubmit)="onClickSubmit(form1.value)">
+Name:<input type="text" name="username" placeholder="username" ngmodel>
+<br>
+password:<input type="password" name="password" placeholder="password" ngmodel>
+<br>
+FirstName:<input type="text" name="firstname" placeholder="fname" ngmodel>
+<br>
+LastName:<input type="text" name="lastname" placeholder="lname" ngmodel>
+<br>
+Gender:
+Male:<input type="radio" id="gender1" name="gender" ngmodel>
+Female:<input type="radio" id="gender2" name="gender" ngmodel>
+<br>
+<input type="submit" value="submit">
+
+
+
+
+
+</form>
